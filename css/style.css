@@ -1,0 +1,276 @@
+/*imput type text 
+margin-left: auto;
+margin-right: auto;
+justify-content: center;
+*/
+@media only screen and (max-width: 768px) {
+div#wrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0%;
+    grid-template-areas: 
+    "meny icon icon icon sok"
+    ". . . . ."
+    ". velkommen velkommen velkommen ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . .";
+    position: fixed;
+}
+
+div#wrapperpt {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0%;
+    grid-template-areas: 
+    "meny icon icon icon sok"
+    ". konpt konpt konpt ."
+    "card card card card card"
+    "card1 card1 card1 card1 card1"
+    "card2 card2 card2 card2 card2"
+    "card3 card3 card3 card3 card3"
+    ". . . . ."
+    ". . . . .";
+    position: fixed;
+}
+
+div#mwrapper {
+    background-color: white;
+    border: 2px #D3D3D3;
+    margin: 0%;
+    width: 73%;
+    height:87.5%;
+    top: 12.5%;
+    left: -100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "start"
+    "pt"
+    "ovningar"
+    "login"
+    "."
+    "."
+    ".";
+}
+
+h1.centertext{
+    justify-content: center;
+    align-items: center;
+    position:  relative;
+    top:18px;
+}
+    
+.login {
+    grid-area: login;
+    background-color:red;
+    width: 100%;
+}
+
+.ovningar {
+    grid-area: ovningar;
+    background-color: rebeccapurple;
+    width: 100%;
+}
+
+.start {
+    grid-area: start;
+    background-color: powderblue;
+    width: 100%;
+}
+
+.pt {
+    grid-area: pt;
+    background-color: orangered;
+    width: 100%;
+}
+
+.index {
+    background-image: url("../img/bbild1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.rotate {
+    transform: rotate(90deg);
+    transition: .5s cubic-bezier(.17, .67, .21, 1.69);
+}
+
+.meny {
+background-color: rgb(55, 138, 141);
+grid-area: meny;
+user-select: none;
+
+transform: rotate(0deg);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    background-color: white;
+    grid-area: icon;
+
+}
+
+.sok {
+    background-color: green;
+    grid-area: sok;
+    text-align: center;
+}
+
+.velkommen {
+    background-color: black;
+    grid-area: velkommen;
+}
+
+h1{
+    font-family: oswald;
+    color: #982649;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position:  relative;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-icons.md-dark {
+    color: #042a2b;
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.material-icons.md-light {
+    color: #CDEDF6;
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+.material-icons.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:  relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+#card{
+    grid-area: card;
+    background-color: white;
+    height: 125px;
+}
+
+#card1{
+    grid-area:card1;
+    background-color: blue;
+}
+
+#card2{
+    grid-area: card2;
+    background-color: #982649;
+}
+
+#card3{
+    grid-area: card3;
+    background-color: whoneydew;
+}
+
+.kontakt{
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    margin: 10px 10px;
+    max-height: 100px;
+}
+
+.kontaktapt{
+    grid-area: konpt;
+    max-height: 250px;
+}
+
+h2.ltext{
+    text-align:center;
+}
+
+h2{
+    font-family: Arial;
+}
+
+.material-icons.right{
+    left:80%;
+    position: relative;
+    top:-60px;
+}
+
+}
