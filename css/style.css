@@ -7,20 +7,66 @@ div#wrapper {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 0%;
+    margin: 0;
     grid-template-areas: 
-    "meny icon icon icon sok"
-    ". . . . ."
-    ". velkommen velkommen velkommen ."
-    ". . . . ."
-    ". . . . ."
-    ". . . . ."
-    ". . . . ."
-    ". . . . .";
+    "icon icon icon sok start pt ovningar login"
+    ". . . . . . . ."
+    ". . . . . . . ."
+    ". . . . . . . ."
+    ". . . . . . . ."
+    ". . . . . . . ."
+    ". . . . . . . ."
+    ". . . . . . . .";
     position: fixed;
 }
+
+.login {
+    grid-area: login;
+    background-color:red;
+}
+
+.ovningar {
+    grid-area: ovningar;
+    background-color: rebeccapurple;
+}
+
+.start {
+    grid-area: start;
+    background-color: powderblue;
+}
+
+.pt {
+    grid-area: pt;
+    background-color: orangered;
+}
+
+.sokt {
+    background-color: green;
+    grid-area: sok;
+    text-align: center;
+}
+
+.index {
+    background-image: url("../img/pexels-photo-414029.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    margin: 0px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    background-color: white;
+    grid-area: icon;
+
+}
+
 
 @media only screen and (max-width: 768px) {
 div#wrapper {
@@ -40,6 +86,7 @@ div#wrapper {
     ". . . . ."
     ". . . . .";
     position: fixed;
+    background-image: url("../img/bbild1.jpg");
 }
 
 div#wrapperpt {
